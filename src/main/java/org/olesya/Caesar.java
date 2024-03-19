@@ -5,8 +5,7 @@ public class Caesar {
         StringBuilder result = new StringBuilder();
         for (char character : str.toCharArray()) {
             if (character != ' ') {
-                int alphabetPosition = character;
-                int newPosition = (alphabetPosition + num) % 26;
+                int newPosition = ((int) character + num) % 26;
                 char newCharacter = (char) ( newPosition);
                 result.append(newCharacter);
             } else {
