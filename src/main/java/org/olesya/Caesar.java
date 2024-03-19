@@ -1,6 +1,8 @@
 package org.olesya;
 
 public class Caesar {
+
+    //I don't understand why the capital letter is wrong in cipher
     public static String StringChallenge(String str, int num) {
         StringBuilder result = new StringBuilder();
         for (char character : str.toCharArray()) {
